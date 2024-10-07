@@ -1,6 +1,5 @@
 # задаем алфавит
 eng_al = "abcdefghijklmnopqrstuvwxyz"
-
 # функция шифрования Цезаря
 def cript_caesar(char, step):
     # если не буква, то не шифруем
@@ -16,7 +15,6 @@ def cript_caesar(char, step):
     # если нет, то возвращаем маленькую
     else:
         return res
-
 # функция простой замены
 def cript_simple(char, mapping):
     # если не буква, то не шифруем
@@ -30,7 +28,6 @@ def cript_simple(char, mapping):
     # если нет, то возвращаем маленькую
     else:
         return res
-
 # получаем от пользователя выбор шифра
 print("Выберите метод шифрования:")
 print("1. Шифр Цезаря")
@@ -40,7 +37,6 @@ choice = input("Введите 1 или 2: ")
 # получаем от пользователя исходный текст
 print("Введите текст:")
 text = input()
-
 if choice == "1":
     # получаем от пользователя шаг шифра
     print("Введите шаг:")
